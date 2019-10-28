@@ -1,0 +1,7 @@
+name=input("Please enter you name : ")
+if name.__len__() <= 5:
+    print (f"the name size is {len(name)}, which is small")
+elif name.__len__() > 20:
+    print (f"the name size is {len(name)}, which is big")
+else:
+    print (f"Name looks ok, its of size {len(name)}")
