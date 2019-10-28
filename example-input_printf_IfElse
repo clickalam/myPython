@@ -1,0 +1,36 @@
+price_of_house = 1000000
+cr=input("Whats your credit rating ? ")
+print (int(cr))
+income=input("Whats your income ? ")
+print (int(income))
+
+if int(cr) > 8 :
+    is_goodcredit = True
+else :
+    is_goodcredit = False
+
+if int(income) > 100000 :
+    is_high_income = True
+else :
+    is_high_income = False
+#else
+#is_goodcredit = False
+
+if is_goodcredit and is_high_income :
+    downpayment_of_house = price_of_house * .05
+    print (downpayment_of_house)
+    print (f"Based on your CH , your downpayment will be  : $  {str(downpayment_of_house)}")
+elif is_goodcredit or is_high_income :
+    downpayment_of_house = price_of_house * .10
+    print (downpayment_of_house)
+    print (f"Based on your CH , your downpayment will be  : $  {str(downpayment_of_house)}")
+elif not(is_goodcredit) and not(is_high_income) :
+    downpayment_of_house = price_of_house * .50
+    print (downpayment_of_house)
+    print (f"Based on your CH , your downpayment will be  : $  {str(downpayment_of_house)}")
+else :
+    #downpayment_of_house = price_of_house * .20
+    #print(downpayment_of_house)
+    #print (f"Based on your CH , your downpayment will be  : $  {str(downpayment_of_house)}")
+    print ("Criteria doesnt match ")
+print ("How's that :) ")
