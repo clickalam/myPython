@@ -1,0 +1,16 @@
+i=1
+secret_number=7
+print ("Please guess the secret number : " )
+while i < 4:
+    guess = input("Enter your Guess   : " )
+    guess = int(guess)
+    print (f"Guess count{i} is {guess}")
+    if guess == secret_number:
+        print (f"Congratulations , that's the right Guess !! And you guessed in {i} attempts ")
+    elif not(guess == secret_number) and i == 3 :
+        print ("Thats not correct, and you have reached maximum attempts")
+    elif not(guess == secret_number) and not(i == 3) :
+        rem=3-i
+        print (f"Thats not correct, but you still have {rem} attempts")
+    i += 1
+print ("done")
