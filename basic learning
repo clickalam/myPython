@@ -1,0 +1,46 @@
+print("Narendra  Modi ")
+print('*' * 10)
+print('*' * 100)
+
+price =10
+print (price)
+
+##name=input("whats your name? ")
+##color=input("what color you like ")
+##print(name+" likes " + color)
+
+##birth_year= input("whats ur birth year " )
+##curr_year=2019
+##age = curr_year - int(birth_year)
+##print (age)
+
+#age_in_lb = print(int(input("what is ur weight ")) * 0.45)
+##print(age_in_lb * 0.45)
+
+#ext = "hello beautiful , how are you doing?"
+#print(text[:])
+
+#check= input("whats ur name ")
+#len(check)==3
+#print(check)
+###"Modi " in (check)
+#print("Modi " in (check))
+
+#print(check.replace("Narendra ", "Nirav "))
+
+
+#decimal=print(10 // 3 )
+#print ((decimal))
+
+#is_hot =False
+#is_cold =False
+
+#if is_hot :
+#    print ("It's a hot day")
+#    print ("Drink lot of water")
+#elif is_cold :
+#    print ("It's a cold day")
+#    print ("Wear warm clothes")
+#else:
+#    print ("Its a lovely day")
+#print ("Test what happens here -2")
