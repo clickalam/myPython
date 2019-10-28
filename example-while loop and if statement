@@ -7,6 +7,7 @@ while i < 4:
     print (f"Guess count{i} is {guess}")
     if guess == secret_number:
         print (f"Congratulations , that's the right Guess !! And you guessed in {i} attempts ")
+        break
     elif not(guess == secret_number) and i == 3 :
         print ("Thats not correct, and you have reached maximum attempts")
     elif not(guess == secret_number) and not(i == 3) :
