@@ -1,0 +1,31 @@
+
+user_entry=input(" This game is to play Car game - Enter your Name").lower()
+command =""
+started = False
+print ("user_entry")
+print (f" The Driver of this car is : {user_entry.lower()}")
+
+while True:
+    command = input(" > ").lower()
+    if command == 'start' :
+        if started :
+            print ("Car is  ALREADY started")
+        else:
+            started = True
+            print ("Car is  starting")
+    elif command == 'stop' :
+        if not started :
+            print ("car is already Stopped")
+        else:
+            print ("car is Stopped")
+    elif command == 'quit':
+        print ("Exiting")
+        break
+    elif command == 'help':
+        print('''
+start - to start the car
+stop - to stop the car
+quit - to exit        
+        ''')
+    else :
+        print ("Entered value is incorrect")
