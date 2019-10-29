@@ -1,0 +1,29 @@
+print ("Dictonary - Key/Value Pair example -")
+
+key_value_number = {
+    "1" : "one",
+    "2" : "two",
+    "3" : "three",
+    "4" : "four",
+    "5" : "five",
+    "6" : "six",
+    "7" : "seven",
+    "8" : "eight",
+    "9" : "nine"
+}
+
+print (key_value_number["1"])
+##Add another entry in key value Pair
+key_value_number["0"] = "zero"
+print (key_value_number)
+
+##Edit the value for a key
+key_value_number["9"] = "NINE"
+entered_value=input("Enter your numeric Number :")
+print (entered_value)
+
+output = ""
+for each_entered in entered_value:
+    output += key_value_number.get(each_entered, "!") + ""
+print (output)
+
