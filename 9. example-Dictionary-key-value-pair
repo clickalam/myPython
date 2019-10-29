@@ -1,5 +1,10 @@
 print ("Dictonary - Key/Value Pair example -")
 
+##define a function
+def output_message():
+    print (key_value_number)
+
+
 key_value_number = {
     "1" : "one",
     "2" : "two",
@@ -12,13 +17,16 @@ key_value_number = {
     "9" : "nine"
 }
 
-print (key_value_number["1"])
+output_message()
 ##Add another entry in key value Pair
 key_value_number["0"] = "zero"
-print (key_value_number)
+output_message()
 
 ##Edit the value for a key
 key_value_number["9"] = "NINE"
+
+output_message()
+
 entered_value=input("Enter your numeric Number :")
 print (entered_value)
 
