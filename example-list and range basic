@@ -1,0 +1,13 @@
+print("Display Stars and form Characters - F")
+
+star=[5,2,5,2,2]
+for star_loop in star:
+    print ('*' * star_loop)
+
+print("Display Stars and form Characters - E ")
+star2=[7,2,4,2,7]
+for outer_loop_val in star2:
+    star_display=""
+    for inner_loop in range(outer_loop_val):
+        star_display += '*'
+    print (star_display)
