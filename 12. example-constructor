@@ -1,0 +1,15 @@
+class Person:
+    ##construct
+    def __init__(self, name):
+        self.name=name
+
+    ##method in the class
+    def talk(self):
+        print (f"Hi, I am {self.name}")
+
+
+##person object -- ech object is a different Instance  of Person Class
+john=Person("John P")
+john.talk()
+bob=Person("Bob Wescott")
+bob.talk()
