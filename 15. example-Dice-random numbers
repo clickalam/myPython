@@ -1,0 +1,21 @@
+import random
+names = ['Alam', 'Myrah', 'Zoha', 'Bush', 'Aiza']
+
+print(random.choice(names))
+
+from util_calc import random_gen
+
+a=random_gen()
+b=random_gen()
+
+print(f" {a} {b}")
+
+
+## save below in another file as a seperate module and save with util.calc.py which is called above
+
+def random_gen():
+    import random
+
+    for i in range(1):
+        temp = random.randint(1,8)
+    return temp
