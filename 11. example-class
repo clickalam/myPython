@@ -1,0 +1,17 @@
+class Point :
+    def move(self):
+        print ("Move")
+
+    def start(self):
+        print ("start")
+
+
+point1 = Point()
+point1.move()
+point1.start()
+
+point1.random_allocation = 10
+point1.random2=20
+
+print (point1.random_allocation)
+print (point1.random2)
