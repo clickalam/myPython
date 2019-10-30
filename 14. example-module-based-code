@@ -1,0 +1,18 @@
+#----module utilmethod.py will be seperate file in same folder
+def find_max (numbers):
+    maxi=numbers[0]
+    for number in numbers:
+        if number > maxi:
+            maxi=number
+    return maxi
+
+
+#-----this is main call of Pythin script
+
+##below will import only needed module ;; we can also do -- import utilmoethd and do utilmethod.find_max
+from utilmethod import find_max
+
+numbers= [2,3,1,4,2,7,3,8,4,9]
+
+maxi = find_max(numbers)
+print (maxi)
