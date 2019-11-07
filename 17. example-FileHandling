@@ -1,0 +1,20 @@
+import pandas as pd
+df = pd.read_csv('vgsales.csv')
+
+df.shape
+
+df.describe()
+
+-----------------------
+
+import pandas as pd
+from skylearn.tree import DecisionTreeClassifier
+music_data = pd.read_csv('music.csv')
+X = music_data.drop(column=['genre'])
+y = music_data['genre']
+
+
+model = DecisionTreeClassifier()
+model.fit(X,y)
+
+predictions = model.predict([[21, 1]])
